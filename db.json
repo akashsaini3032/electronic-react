@@ -127,6 +127,30 @@
             "image":"https://m.media-amazon.com/images/I/4101Dvt-gaL._SX300_SY300_QL70_FMwebp_.jpg",
             "category":"speaker",
             "price":699
+        },
+        {
+            "id":17,
+            "name":"Zebronics Zeb-Warrior 2.0",
+            "description":" Multimedia Speaker With Aux Connectivity,USB Powered And Volume Control Black Colour Available Zebronics Zeb-Warrior ",
+            "image":"https://m.media-amazon.com/images/I/4101Dvt-gaL._SX300_SY300_QL70_FMwebp_.jpg",
+            "category":"speaker",
+            "price":699
+        },
+        {
+            "id":18,
+            "name":"Zebronics Zeb-Warrior 2.0",
+            "description":" Multimedia Speaker With Aux Connectivity,USB Powered And Volume Control Black Colour Available Zebronics Zeb-Warrior ",
+            "image":"https://m.media-amazon.com/images/I/4101Dvt-gaL._SX300_SY300_QL70_FMwebp_.jpg",
+            "category":"speaker",
+            "price":699
+        },
+        {
+            "id":19,
+            "name":"Zebronics Zeb-Warrior 2.0",
+            "description":" Multimedia Speaker With Aux Connectivity,USB Powered And Volume Control Black Colour Available Zebronics Zeb-Warrior ",
+            "image":"https://m.media-amazon.com/images/I/4101Dvt-gaL._SX300_SY300_QL70_FMwebp_.jpg",
+            "category":"speaker",
+            "price":699
         }
     ]
 }
