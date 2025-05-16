@@ -72,7 +72,7 @@ const Home=()=>{
 
     <h1 id="gallary">Launching SOON!!!</h1>
 
-<div className="restaurant-photo-gallery">
+{/* <div className="restaurant-photo-gallery">
   <div className="photo-card"> <img src="https://hammeronline.in/cdn/shop/articles/corporate_gift_for_festive_season.jpg?v=1606798707&width=540"  ></img></div>
   <div className="photo-card"> <img src="https://hammeronline.in/cdn/shop/articles/Solo-Pro-LAUNCH-new.jpg?v=1626262213&width=540"  ></img></div>
   <div className="photo-card"> <img src="https://hammeronline.in/cdn/shop/articles/03.jpg?v=1645515279&width=540"  ></img></div>
@@ -90,7 +90,7 @@ const Home=()=>{
  
 </div>
 
-<br /><br />
+<br /><br /> */}
 
 
           
