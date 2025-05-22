@@ -111,6 +111,11 @@ import { FaHeart } from "react-icons/fa";
 
 import { useSelector } from "react-redux";
 
+// search ke liye code
+import { useState } from 'react';
+// search ke liye code
+
+
 // Images:
 import logo from "../Images/logo.png";
 
@@ -118,6 +123,10 @@ const Header = () => {
   const navigate = useNavigate();
   const cartData = useSelector(state => state.mycart.cart);
   const cartLength = cartData.length;
+
+    // yah hai search bar ke liye
+  const [query, setQuery] = useState('');
+
 
   return (
     <>
@@ -136,23 +145,70 @@ const Header = () => {
               <Nav.Link as={Link} to="laptop">Laptop</Nav.Link>
               <Nav.Link as={Link} to="mobile">Mobile</Nav.Link>
               <Nav.Link as={Link} to="earphone">Headphone</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
+              <Nav.Link as={Link} to="speaker">Speaker</Nav.Link>
+              <Nav.Link as={Link} to="mycart">Cart</Nav.Link>
+              <Nav.Link as={Link} to="search">Search</Nav.Link>
+              {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#" disabled>Link</Nav.Link>
+              </NavDropdown> */}
+              {/* <Nav.Link href="#" disabled>Link</Nav.Link> */}
             </Nav>
 
-            <Form className="d-flex">
+               {/* search code update code */}
+
+               <Form className="d-flex" onSubmit={(e) => {
+  e.preventDefault();
+  const page = query.trim().toLowerCase();
+  switch (page) {
+    case 'home':
+      navigate('/home');
+      break;
+    case 'laptop':
+      navigate('/laptop');
+      break;
+    case 'mobile':
+      navigate('/mobile');
+      break;
+    case 'headphone':
+      navigate('/earphone');
+      break;
+    case 'speaker':
+      navigate('/speaker');
+      break;
+    case 'cart':
+    case 'mycart':
+      navigate('/mycart');
+      break;
+    default:
+      alert('Page not found!');
+  }
+  setQuery('');
+}}>
+  <Form.Control
+    type="search"
+    placeholder="Search"
+    className="me-2"
+    aria-label="Search"
+    value={query}
+    onChange={(e) => setQuery(e.target.value)}
+  />
+</Form>
+
+
+               {/* search code update code */}
+
+
+            {/* <Form className="d-flex">
               <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
               />
-            </Form>
+            </Form> */}
 
             <div className='navIcons' style={{ display: "flex", alignItems: "center", gap: "15px" }}>
               {/* Updated Cart Icon with Count and Navigation */}
